@@ -502,7 +502,7 @@
     const L4 = cineOrbit.geometry().points[3];
     return {
       cx: w / 2,
-      cy: h * 0.44,
+      cy: w > 860 ? h * 0.44 : h * 0.62, // phones: below the top-anchored captions
       scale: s1 * lerp(1, 3.2, z),
       fx: L4[1] * z,
       fy: L4[2] * z,

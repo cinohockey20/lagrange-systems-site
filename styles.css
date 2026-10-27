@@ -536,6 +536,15 @@ p { margin: 0; }
 }
 .cap span { color: #FDBA74; }
 
+/* Phones: some mobile browsers (e.g. DuckDuckGo on iOS) overlay a toolbar on the
+   bottom of the page without reporting it, so captions go at the top instead. */
+@media (max-width: 860px) {
+  .cinema__eyebrow { top: 88px; }
+  .cinema__captions { inset: 124px 0 auto 0; }
+  .cinema__stage::after { inset: 0 0 auto 0; background: linear-gradient(rgba(0,0,0,.9) 40%, transparent); }
+  .cap { font-size: clamp(26px, 7.4vw, 40px); line-height: 1.08; }
+}
+
 /* nav switches to dark glass while the dark scene fills the screen */
 .nav.is-dark { background: rgba(0,0,0,.55); border-bottom-color: rgba(255,255,255,.08); }
 .nav.is-dark .brand, .nav.is-dark .nav__links a { color: #F5F5F7; }
