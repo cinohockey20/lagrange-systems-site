@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lagrange Systems — Custom Software for Operations Teams</title>
+  <meta name="description" content="Lagrange Systems builds custom software that gives your operations team the information it needs to succeed — tailored to how you work, and built to adapt as fast as you do." />
+  <meta name="theme-color" content="#FBFBFA" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ───────────── Navigation ───────────── -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#top" class="brand" aria-label="Lagrange Systems home">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 2.6" opacity=".55"/>
+          <circle cx="16" cy="16" r="4.2" fill="currentColor"/>
+          <circle cx="27" cy="16" r="2.2" fill="var(--accent)"/>
+          <circle cx="21.5" cy="6.5" r="1.3" fill="currentColor"/>
+          <circle cx="21.5" cy="25.5" r="1.3" fill="currentColor"/>
+        </svg>
+        <span class="brand__name">Lagrange<span>Systems</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services">What we build</a>
+        <a href="#approach">Approach</a>
+        <a href="#work">Work</a>
+        <a href="#principles">Principles</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--dark btn--sm nav__cta magnetic">Start a project</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#services">What we build</a>
+      <a href="#approach">Approach</a>
+      <a href="#work">Work</a>
+      <a href="#principles">Principles</a>
+      <a href="#contact" class="btn btn--dark">Start a project</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ───────────── Hero ───────────── -->
+    <section class="hero" id="top">
+      <canvas class="hero__canvas" id="orbit" aria-hidden="true"></canvas>
+      <div class="hero__fade" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <a href="#services" class="pill reveal">
+            <span class="pill__dot"></span>
+            Custom software for operations teams
+            <span class="pill__arrow">→</span>
+          </a>
+
+          <h1 class="hero__title" data-split>
+            Custom software that keeps your operations in <em>balance</em>.
+          </h1>
+
+          <p class="hero__lede reveal" style="--d:.5s">
+            We build software tailored to how your organization actually runs — putting the right
+            information in front of your operations team at the right moment, and adapting as fast as you do.
+          </p>
+
+          <div class="hero__actions reveal" style="--d:.65s">
+            <a href="#contact" class="btn btn--accent magnetic">Start a project <span aria-hidden="true">→</span></a>
+            <a href="#approach" class="btn btn--ghost">See how we work</a>
+          </div>
+
+          <p class="hero__def reveal" style="--d:.85s">
+            <span class="mono">la·grange point</span> <span class="hero__def-pos">n.</span>
+            A position where the pull of two bodies balances, letting a third stay put with almost no effort.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ───────────── Stack marquee ───────────── -->
+    <section class="stack" aria-label="Systems we connect to">
+      <p class="stack__label mono">Connects to the systems you already run</p>
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>POS</span><span>ERP</span><span>HRIS</span><span>Payroll</span><span>Scheduling</span><span>Inventory</span>
+          <span>Excel &amp; Sheets</span><span>SharePoint</span><span>Microsoft 365</span><span>Google Workspace</span>
+          <span>Salesforce</span><span>QuickBooks</span><span>Slack</span><span>Teams</span><span>SQL Server</span>
+          <span>PostgreSQL</span><span>Snowflake</span><span>Power BI</span><span>REST APIs</span><span>SFTP drops</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Manifesto (words light up as you scroll) ───────────── -->
+    <section class="manifesto" id="manifesto" aria-label="What we believe">
+      <div class="manifesto__sticky">
+        <div class="container">
+          <p class="eyebrow">What we believe</p>
+          <p class="manifesto__text" data-light>
+            Off-the-shelf software asks your operations team to work its way. We build the opposite:
+            tools shaped around <em>how your team actually works,</em> that surface what matters before
+            it becomes a problem, and that <em>bend when the business changes</em> — instead of breaking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Services ───────────── -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">What we build</p>
+          <h2 class="reveal" style="--d:.08s">Everything your ops team needs.<br /><span class="muted">Nothing it doesn't.</span></h2>
+        </header>
+
+        <div class="bento">
+          <!-- Visibility (feature card) -->
+          <article class="card card--feature spot reveal">
+            <div class="card__body">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+              </div>
+              <h3>Real-time operational visibility</h3>
+              <p>Live dashboards, scorecards and alerts that pull from every system you run — so your team sees problems while there's still time to fix them.</p>
+              <ul class="tags"><li>Dashboards</li><li>KPIs</li><li>Alerts</li><li>Mobile</li></ul>
+            </div>
+            <div class="console" aria-label="Example operations status output">
+              <div class="console__bar"><i></i><i></i><i></i><span class="mono">ops-pulse · east region</span></div>
+              <pre class="console__out mono" id="consoleOut"></pre>
+            </div>
+          </article>
+
+          <article class="card spot reveal" style="--d:.06s">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+            </div>
+            <h3>Custom internal tools</h3>
+            <p>Apps built around your exact workflows — checklists, approvals, audits, scheduling — not a vendor's idea of them.</p>
+            <div class="mini-code mono" aria-hidden="true">
+              <span><b>✓</b> Opening checklist <em>12/12</em></span>
+              <span><b>✓</b> Temp log · walk-in <em>36°F</em></span>
+              <span><b>→</b> Repair request <em>assigned</em></span>
+            </div>
+          </article>
+
+          <article class="card spot reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="2.6"/><path d="M5 6v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6M5 12v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6v-6"/></svg>
+            </div>
+            <h3>Data integration</h3>
+            <p>POS, ERP, HR, inventory and spreadsheets — connected into one reliable source of truth.</p>
+            <div class="bars" aria-hidden="true">
+              <i style="--h:38%"></i><i style="--h:54%"></i><i style="--h:46%"></i><i style="--h:70%"></i><i style="--h:62%"></i><i style="--h:84%"></i><i style="--h:76%"></i><i style="--h:92%"></i>
+            </div>
+          </article>
+
+          <article class="card spot reveal" style="--d:.06s">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="5" r="2.2"/><circle cx="19" cy="19" r="2.2"/><path d="M7 11l10-5M7 13l10 5"/></svg>
+            </div>
+            <h3>Workflow automation</h3>
+            <p>Reports that build themselves, handoffs that happen on their own, and no more copy-paste between systems.</p>
+            <svg class="graph" viewBox="0 0 240 70" aria-hidden="true">
+              <path class="graph__line" d="M20 35 C 70 35, 70 12, 120 12 S 170 35, 220 35"/>
+              <path class="graph__line" d="M20 35 C 70 35, 70 58, 120 58 S 170 35, 220 35"/>
+              <circle cx="20" cy="35" r="5"/><circle cx="120" cy="12" r="5"/><circle cx="120" cy="58" r="5"/><circle cx="220" cy="35" r="5" class="graph__end"/>
+            </svg>
+          </article>
+
+          <article class="card spot reveal" style="--d:.12s">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16z"/></svg>
+            </div>
+            <h3>AI for operations</h3>
+            <p>Practical AI that summarizes, forecasts and flags — grounded in your data and reviewed by your people.</p>
+            <div class="status mono" aria-hidden="true">
+              <span><i class="ok"></i>forecasts</span><span><i class="ok"></i>summaries</span><span><i class="ok"></i>anomalies</span><span><i class="ok"></i>copilot</span>
+            </div>
+          </article>
+
+          <article class="card card--wide spot reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0113.7-5.7L20 8.5M20 4v4.5h-4.5M20 12a8 8 0 01-13.7 5.7L4 15.5M4 20v-4.5h4.5"/></svg>
+            </div>
+            <div>
+              <h3>Built to change</h3>
+              <p>Your business won't stand still, so neither does your software. A modular foundation means new reports, fields, locations and workflows ship in days — not quarters, and not at "enterprise change-request" prices.</p>
+            </div>
+          </article>
+
+          <a href="#contact" class="card card--cta reveal" style="--d:.06s">
+            <span class="eyebrow">Not sure where to start?</span>
+            <span class="card--cta__title">Book a 30-minute operations review <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Closer look (pinned, scroll-scrubbed) ───────────── -->
+    <section class="cinema" id="cinema" aria-label="A closer look at balance">
+      <div class="cinema__sticky">
+        <div class="cinema__stage" id="cinemaStage">
+          <canvas id="cinemaCanvas" aria-hidden="true"></canvas>
+          <p class="cinema__eyebrow mono">A closer look</p>
+          <div class="cinema__captions">
+            <p class="cap" data-from=".12" data-to=".30">Every operation is pulled<br />in two directions.</p>
+            <p class="cap" data-from=".34" data-to=".54">Speed and control.<br />Data and <span>people.</span></p>
+            <p class="cap" data-from=".60" data-to=".80">Find the point where they balance,<br />and things <span>simply stay on track.</span></p>
+            <p class="cap" data-from=".86" data-to="1.2">That's how your operations<br />should feel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Approach (L1–L5) ───────────── -->
+    <section class="section approach" id="approach">
+      <div class="container approach__grid">
+        <div class="approach__sticky">
+          <p class="eyebrow reveal">Our approach</p>
+          <h2 class="reveal" style="--d:.08s">Five points of<br /><span class="muted">equilibrium.</span></h2>
+          <p class="approach__intro reveal" style="--d:.16s">
+            Every engagement moves through five stable positions. Each is a place where the work
+            can rest, be reviewed by your team, and continue with confidence.
+          </p>
+
+          <svg class="lmap reveal" id="lmap" viewBox="0 0 400 400" aria-hidden="true" style="--d:.2s">
+            <circle class="lmap__ring" cx="200" cy="200" r="140"/>
+            <circle class="lmap__ring lmap__ring--faint" cx="200" cy="200" r="70"/>
+            <path class="lmap__tri" d="M200 200 L270 78.8 L340 200 Z M200 200 L270 321.2 L340 200 Z"/>
+            <circle class="lmap__sun" cx="200" cy="200" r="18"/>
+            <circle class="lmap__planet" cx="340" cy="200" r="7"/>
+
+            <g class="lpt" data-step="1" transform="translate(298 200)"><circle class="lpt__halo" r="16"/><circle class="lpt__dot" r="5"/><text y="-14">L1</text></g>
+            <g class="lpt" data-step="2" transform="translate(382 200)"><circle class="lpt__halo" r="16"/><circle class="lpt__dot" r="5"/><text y="-14">L2</text></g>
+            <g class="lpt" data-step="3" transform="translate(60 200)"><circle class="lpt__halo" r="16"/><circle class="lpt__dot" r="5"/><text y="-14">L3</text></g>
+            <g class="lpt" data-step="4" transform="translate(270 78.8)"><circle class="lpt__halo" r="16"/><circle class="lpt__dot" r="5"/><text y="-14">L4</text></g>
+            <g class="lpt" data-step="5" transform="translate(270 321.2)"><circle class="lpt__halo" r="16"/><circle class="lpt__dot" r="5"/><text y="28">L5</text></g>
+          </svg>
+        </div>
+
+        <ol class="steps">
+          <li class="step" data-step="1">
+            <span class="step__num mono">L1</span>
+            <h3>Discover</h3>
+            <p>We spend time with your operations team — the shifts, the reports, the workarounds — and map exactly what information they're missing.</p>
+            <span class="step__out mono">Output · one-page brief &amp; data map</span>
+          </li>
+          <li class="step" data-step="2">
+            <span class="step__num mono">L2</span>
+            <h3>Design</h3>
+            <p>Screens, alerts and data flows designed around real roles — the frontline manager, the regional lead, the executive — and tested with them early.</p>
+            <span class="step__out mono">Output · clickable prototype</span>
+          </li>
+          <li class="step" data-step="3">
+            <span class="step__num mono">L3</span>
+            <h3>Build</h3>
+            <p>Short cycles and weekly demos, so your team shapes the tool while it's being built — not after it ships.</p>
+            <span class="step__out mono">Output · working software, every week</span>
+          </li>
+          <li class="step" data-step="4">
+            <span class="step__num mono">L4</span>
+            <h3>Roll out</h3>
+            <p>Phased launches with hands-on training, so adoption happens on day one instead of month six.</p>
+            <span class="step__out mono">Output · live system, trained team</span>
+          </li>
+          <li class="step" data-step="5">
+            <span class="step__num mono">L5</span>
+            <h3>Adapt</h3>
+            <p>As your business changes, the software changes with it — new metrics, new locations, new workflows — without starting over.</p>
+            <span class="step__out mono">Output · ongoing improvements on your schedule</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────────── Work ───────────── -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section__head section__head--split">
+          <div>
+            <p class="eyebrow reveal">Example engagements</p>
+            <h2 class="reveal" style="--d:.08s">Tools we build<br /><span class="muted">for ops teams.</span></h2>
+          </div>
+          <div class="section__side reveal" style="--d:.16s">
+            <p class="section__aside">Different industries, same pattern: the information exists somewhere — it just isn't reaching the people who need it.</p>
+            <div class="carousel__controls">
+              <button class="carousel__btn" type="button" data-dir="-1" aria-label="Previous engagements"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+              <button class="carousel__btn" type="button" data-dir="1" aria-label="Next engagements"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <div class="carousel reveal" style="--d:.1s">
+        <div class="carousel__track" id="workTrack" tabindex="0" aria-label="Example engagements, scroll horizontally">
+          <article class="work__card">
+            <div class="work__art work__art--dash" aria-hidden="true">
+              <div class="dash">
+                <div class="dash__kpi"><b>29.8%</b><span>labor vs 30.5% plan</span></div>
+                <div class="dash__kpi"><b>3</b><span>locations need attention</span></div>
+                <svg class="dash__spark" viewBox="0 0 200 60" preserveAspectRatio="none"><path d="M0 48 L20 44 L40 46 L60 36 L80 38 L100 28 L120 31 L140 20 L160 24 L180 12 L200 14"/></svg>
+              </div>
+            </div>
+            <div class="work__body">
+              <h3>Operations command center</h3>
+              <p>One live view of sales, labor, inventory and service across every location, with alerts that fire before problems reach the customer.</p>
+              <ul class="tags"><li>Dashboards</li><li>Realtime</li><li>Alerts</li></ul>
+            </div>
+          </article>
+
+          <article class="work__card">
+            <div class="work__art work__art--docs" aria-hidden="true">
+              <div class="doc"><i></i><i></i><i></i><i class="short"></i></div>
+              <div class="doc"><i></i><i></i><i class="short"></i></div>
+              <div class="doc doc--front"><i class="hl"></i><i></i><i class="hl"></i><i class="short"></i><span class="doc__check">✓</span></div>
+            </div>
+            <div class="work__body">
+              <h3>Automated reporting</h3>
+              <p>The weekly recap that used to eat a day of spreadsheet work — generated, checked and delivered to every manager automatically, on time, every time.</p>
+              <ul class="tags"><li>Reporting</li><li>PDF</li><li>Automation</li></ul>
+            </div>
+          </article>
+
+          <article class="work__card">
+            <div class="work__art work__art--tools" aria-hidden="true">
+              <div class="table">
+                <div class="table__head"><i></i><i></i><i></i></div>
+                <div class="table__row"><span class="badge badge--ok">Closed</span><i></i><i class="s"></i></div>
+                <div class="table__row is-sel"><span class="badge badge--wait">Open</span><i></i><i class="s"></i></div>
+                <div class="table__row"><span class="badge badge--ok">Closed</span><i></i><i class="s"></i></div>
+              </div>
+            </div>
+            <div class="work__body">
+              <h3>Audits &amp; follow-ups</h3>
+              <p>Inspections, checklists and corrective actions in one mobile app — with every open item tracked to closure and rolled up for leadership.</p>
+              <ul class="tags"><li>Mobile</li><li>Workflows</li><li>Approvals</li></ul>
+            </div>
+          </article>
+
+          <article class="work__card">
+            <div class="work__art work__art--forecast" aria-hidden="true">
+              <svg class="forecast" viewBox="0 0 240 120">
+                <path class="forecast__band" d="M130 64 C150 54,170 46,190 42 S220 30,236 24 L236 60 C220 64,205 68,190 70 S150 74,130 66 Z"/>
+                <path class="forecast__hist" d="M4 92 L20 86 L36 90 L52 78 L68 82 L84 70 L100 74 L116 64 L130 65"/>
+                <path class="forecast__pred" d="M130 65 C150 60,170 56,190 54 S220 44,236 42"/>
+                <line class="forecast__now" x1="130" y1="10" x2="130" y2="112"/>
+                <text class="forecast__label" x="135" y="18">today</text>
+              </svg>
+            </div>
+            <div class="work__body">
+              <h3>Demand &amp; labor forecasting</h3>
+              <p>Forecasts that learn from your history and the calendar, then turn into staffing and ordering recommendations your managers can trust.</p>
+              <ul class="tags"><li>Forecasting</li><li>Scheduling</li><li>ML</li></ul>
+            </div>
+          </article>
+
+          <article class="work__card">
+            <div class="work__art work__art--chat" aria-hidden="true">
+              <div class="bubble bubble--in">Which locations missed labor target this week?</div>
+              <div class="bubble bubble--out">Three: Elm St (+2.1%), Bay Rd (+1.4%) and Main St (+0.8%). <span class="cite mono">[labor report · wk 42]</span></div>
+              <div class="bubble bubble--typing"><i></i><i></i><i></i></div>
+            </div>
+            <div class="work__body">
+              <h3>Ops copilot</h3>
+              <p>Ask questions of your operational data in plain English and get answers with sources — not guesses, and not another report to dig through.</p>
+              <ul class="tags"><li>AI</li><li>Search</li><li>Your data</li></ul>
+            </div>
+          </article>
+
+          <article class="work__card">
+            <div class="work__art work__art--legacy" aria-hidden="true">
+              <div class="blocks">
+                <i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i>
+                <i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i>
+                <i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i>
+              </div>
+            </div>
+            <div class="work__body">
+              <h3>Spreadsheet replacement</h3>
+              <p>Retire the fragile spreadsheets and aging systems your operation depends on — piece by piece, with no big-bang cutover and no lost data.</p>
+              <ul class="tags"><li>Migration</li><li>Integration</li><li>Training</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Principles ───────────── -->
+    <section class="section principles" id="principles">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">How we work</p>
+          <h2 class="reveal" style="--d:.08s">Principles that<br /><span class="muted">keep things moving.</span></h2>
+        </header>
+        <div class="principles__grid">
+          <div class="principle reveal"><span class="mono">01</span><h3>Tailored, not configured</h3><p>We build around your workflows instead of forcing your team into someone else's template.</p></div>
+          <div class="principle reveal" style="--d:.06s"><span class="mono">02</span><h3>Agile by design</h3><p>Weekly releases and modular code mean changes land in days. When your priorities shift, we shift with them.</p></div>
+          <div class="principle reveal" style="--d:.12s"><span class="mono">03</span><h3>You own everything</h3><p>Your code, your data, your IP. No per-seat licenses, no lock-in, and documentation any capable team can pick up.</p></div>
+          <div class="principle reveal" style="--d:.18s"><span class="mono">04</span><h3>Adoption is the metric</h3><p>Software only works if people use it. We measure success on the floor, not in the demo.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Contact ───────────── -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__copy">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="reveal" style="--d:.08s">Let's find your<br /><span class="accent">point of balance.</span></h2>
+          <p class="reveal" style="--d:.16s">Tell us how your operation runs today and where information gets stuck. We'll reply with honest next steps — even if that means pointing you to something off the shelf.</p>
+          <a class="contact__mail mono reveal" style="--d:.22s" href="mailto:hello@lagrangesystems.com">hello@lagrangesystems.com</a>
+        </div>
+
+        <form class="form reveal" id="contactForm" style="--d:.1s" novalidate>
+          <fieldset class="chips">
+            <legend>I'm interested in</legend>
+            <label><input type="checkbox" name="interest" value="Dashboards & reporting" /><span>Dashboards &amp; reporting</span></label>
+            <label><input type="checkbox" name="interest" value="Internal tools" /><span>Internal tools</span></label>
+            <label><input type="checkbox" name="interest" value="Integrations" /><span>Integrations</span></label>
+            <label><input type="checkbox" name="interest" value="Automation" /><span>Automation</span></label>
+            <label><input type="checkbox" name="interest" value="AI" /><span>AI</span></label>
+          </fieldset>
+
+          <div class="form__row">
+            <label class="field"><span>Name</span><input name="name" type="text" autocomplete="name" required /></label>
+            <label class="field"><span>Work email</span><input name="email" type="email" autocomplete="email" required /></label>
+          </div>
+          <label class="field"><span>Company <em>(optional)</em></span><input name="company" type="text" autocomplete="organization" /></label>
+          <label class="field"><span>What does your ops team need?</span><textarea name="message" rows="4" required></textarea></label>
+
+          <button class="btn btn--accent btn--block magnetic" type="submit">Send message <span aria-hidden="true">→</span></button>
+          <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────── Footer ───────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand" aria-label="Lagrange Systems home">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 2.6" opacity=".55"/>
+            <circle cx="16" cy="16" r="4.2" fill="currentColor"/>
+            <circle cx="27" cy="16" r="2.2" fill="var(--accent)"/>
+            <circle cx="21.5" cy="6.5" r="1.3" fill="currentColor"/>
+            <circle cx="21.5" cy="25.5" r="1.3" fill="currentColor"/>
+          </svg>
+          <span class="brand__name">Lagrange<span>Systems</span></span>
+        </a>
+        <p>Custom software that keeps your operations in balance.</p>
+      </div>
+      <div class="footer__cols">
+        <div><h4>Company</h4><a href="#approach">Approach</a><a href="#work">Work</a><a href="#principles">Principles</a></div>
+        <div><h4>What we build</h4><a href="#services">Dashboards &amp; alerts</a><a href="#services">Internal tools</a><a href="#services">Integrations</a></div>
+        <div><h4>Contact</h4><a href="mailto:hello@lagrangesystems.com">Email</a><a href="#" aria-label="LinkedIn (add link)">LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <span>© <span id="year"></span> Lagrange Systems</span>
+      <span class="mono">L1 · L2 · L3 · L4 · L5</span>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
